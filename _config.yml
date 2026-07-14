@@ -45,7 +45,7 @@ author:
   researchgate     : # URL
   scopus           : # URL
   zotero           : # URL
-  hal              : "https://hal.science/search/index/?q=%2A&authIdHal_s=essalih-anasse"
+  hal              : "https://hal.science/search/index/q/*/authIdHal_s/essalih-anasse"
 
   cvhal:             "https://cv.hal.science/essalih-anasse"
   # Repositories and software development
