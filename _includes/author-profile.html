@@ -171,14 +171,31 @@
       {% if author.zhihu %}
       <li><a href="https://www.zhihu.com/people/{{ author.zhihu }}"><i class="fab fa-fw fa-zhihu icon-pad-right" aria-hidden="true"></i>Zhihu</a></li>
       {% endif %}
-          <!-- HAL Profile -->
+       <!-- HAL Profile -->
     {% if author.hal %}
-      <li><a href="{{ author.hal }}"><i class="fas fa-fw fa-academic-lines" aria-hidden="true"></i> HAL Profile</a></li>
+      <li>
+        <a href="{{ author.hal }}">
+          <i class="ai ai-hal ai-fw" aria-hidden="true"></i> HAL Profile
+        </a>
+      </li>
     {% endif %}
     
     <!-- CV HAL -->
     {% if author.cvhal %}
-      <li><a href="{{ author.cvhal }}"><i class="file-pdf fa-fw fas" aria-hidden="true"></i> CV HAL</a></li>
+      <li>
+        <a href="{{ author.cvhal }}">
+          <i class="ai ai-hal-cv ai-fw" aria-hidden="true"></i> CV HAL
+        </a>
+      </li>
+    {% endif %}
+    
+    <!-- Bluesky -->
+    {% if author.bluesky %}
+      <li>
+        <a href="https://bsky.app/profile/{{ author.bluesky }}">
+          <i class="fa-brands fa-bluesky fa-fw" aria-hidden="true"></i> Bluesky
+        </a>
+      </li>
     {% endif %}
     </ul>
   </div>
